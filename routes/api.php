@@ -15,12 +15,6 @@ use Illuminate\Http\Request;
 */
 
 Route::prefix('alumnos')->group(function () {
-    Route::get('info/{matricula}', function () {
-        // Matches The "/admin/users" URL
-        dd('info');
-    });
-
-    Route::get('avatar/{matricula}', function () {
-        dd('avatar');
-    });
+    Route::get('info/{matricula}', 'QR_auth@getStudentsData');
+    Route::get('avatar/{matricula}', 'QR_auth@getStudentsAvatar');
 });
