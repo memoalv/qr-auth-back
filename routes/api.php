@@ -13,6 +13,13 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::prefix('alumnos')->group(function () {
+    Route::get('info/{matricula}', function () {
+        // Matches The "/admin/users" URL
+        dd('info');
+    });
+
+    Route::get('avatar/{matricula}', function () {
+        dd('avatar');
+    });
 });
