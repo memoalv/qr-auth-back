@@ -1,6 +1,7 @@
 <?php
 
-class Damm
+namespace App\Helpers;
+class DammAlgorithm
 {
     /**
      * Crea un nuevo digito verificador

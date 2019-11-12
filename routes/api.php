@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -15,6 +13,6 @@ use Illuminate\Http\Request;
 */
 
 Route::prefix('alumnos')->group(function () {
-    Route::get('info/{matricula}', 'QR_auth@getStudentsData');
-    Route::get('avatar/{matricula}', 'QR_auth@getStudentsAvatar');
+    Route::get('info/', 'QR_auth@getStudentsData');
+    Route::get('avatar/', 'QR_auth@getStudentsAvatar');
 });
