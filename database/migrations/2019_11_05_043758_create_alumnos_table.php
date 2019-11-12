@@ -33,7 +33,7 @@ class CreateAlumnosTable extends Migration
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'matricula' => '147841',
+                'matricula' => '148283',
                 'nombre' => 'Jesus Adrian',
                 'apellido' => 'Guerrero Valtierra',
                 'activo' => true,
