@@ -34,9 +34,17 @@ class CreateAlumnosTable extends Migration
             ],
             [
                 'matricula' => '147841',
-                'nombre' => 'Adrian',
-                'apellido' => 'GV',
+                'nombre' => 'Jesus Adrian',
+                'apellido' => 'Guerrero Valtierra',
                 'activo' => true,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'matricula' => '123123',
+                'nombre' => 'Juanito Intruso',
+                'apellido' => 'Perez',
+                'activo' => false,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ]
