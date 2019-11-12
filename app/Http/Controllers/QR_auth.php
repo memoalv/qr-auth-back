@@ -24,6 +24,6 @@ class QR_auth extends Controller
 
     public function getStudentsAvatar(Request $req)
     {
-        return response()->file(storage_path("app/alumnos/{$req->matricula}.jpg"));
+        return response()->file(storage_path("app/alumnos/{$req->matricula}.png"));
     }
 }
