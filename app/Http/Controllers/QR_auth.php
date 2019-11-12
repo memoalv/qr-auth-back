@@ -12,7 +12,6 @@ class QR_auth extends Controller
 {
     public function getStudentsData(Request $req)
     {
-
         $alumno = Alumnos::where('matricula', $req->matricula)
             ->first();
 
@@ -25,7 +24,6 @@ class QR_auth extends Controller
 
     public function getStudentsAvatar(Request $req)
     {
-        $damm = new DammAlgorithm;
-        dd($damm);
+        return response()->file(storage_path("app/alumnos/{$req->matricula}.jpg"));
     }
 }
